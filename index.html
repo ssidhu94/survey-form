@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for your interest in our structural engineering company. Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Full Name: <input id="name" type="text" placeholder="Enter your full name" required /></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your Email" required /></label>
+      
+        <p>
+          <label id="number-label">Years of Experience: <input id="number" type="number" min="0" max="40" placeholder="Enter your years of experience" /></label>
+        <label id="education">Highest Level of Education: 
+          <select id="dropdown" name="dropdown">
+            <option value=""> (select one)</option>
+            <option value="1">Bachelors</option>
+            <option value="2">Masters</option>
+            <option value="3">PhD</option>
+          </select>
+        </label>
+        </p>
+        </fieldset>
+      <fieldset
+        <p>Interest (Select All That Apply)
+          <label><input type="radio" name="interests" value="1">Educational</label>
+          <label><input type="radio" name="interests" value="2">Multi-Family</label>
+          <label><input type="radio" name="interests" value="3">High-End Residental</label>
+          <label><input type="radio" name="interests" value="4">Healthcare</label>
+          <label><input type="radio" name="interests" value="5">Other</label>
+        </p>
+        <p>Prefered Working Environment
+          <label><input type="checkbox" name="environment" value="1">In-Office</label>
+          <label><input type="checkbox" name="environment" value="2">Remote</label>
+          <label><input type="checkbox" name="environment" value="3">Other</label>
+        </p>
+        <label>Additional Information:
+          <textarea id="information"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+      </body>
+      </html>
+
+          
